@@ -117,6 +117,7 @@ right: 430px;
 .copy-right{
 color: #EAF6F6;
 margin-top: 45px;
+font-size: 0.75rem;
 
 }
 
@@ -168,4 +169,8 @@ font-weight: 200;
 font-size: 1.25rem;
 margin: 0px 25px 0px 25px;
 
+}
+
+.footer-link:hover{
+color: #EAF6F6;
 }
