@@ -1,44 +1,90 @@
+.typewriter {
+   color: #e5e5e5;
+   font-family: monospace;
+   overflow: hidden; /* Ensures the content is not revealed until the animation */
+   border-right: .15em solid transparent; /* The typwriter cursor */
+   white-space: nowrap; /* Keeps the content on a single line */
+   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+   letter-spacing: .15em; /* Adjust as needed */
+   animation: 
+     typing 5s steps(40, end),
+     blink-caret .5s step-end infinite;
+ }
+ 
+ /* The typing effect */
+ @keyframes typing {
+   from { width: 0 }
+   to { width: 100% }
+ }
+ 
+
+
+
 body{
-font-color: #40514E;
+background-color: #e5e5e5;
 margin: 0;
 text-align: center;
-font-family: 'Merriweather', serif;
+font-family: 'Roboto Mono', monospace;
 }
+/* upper side */
 
 a{
-color: #11999E;
+color: #e5e5e5;
 }
 
 p{
 line-height: 2;
 }
 h1{
-font-size: 562%;
-margin-top: 50 auto 0 auto;
-font-family: 'Sacramento', cursive;
-color: #66BFBF;
+font-size: 400%;
+margin-top: 30 auto 0 auto;
+font-family: 'Roboto Mono', monospace;
+color: #e5e5e5;
 line-height: 2;
+opacity: 1;
 }
 
 h2{
 font-size: 2.5rem;
-font-weight: normal;
-font-family: 'Montserrat', sans-serif;
-color: #66BFBF;
+font-weight: bold;
+font-family: 'Roboto Mono', monospace;
+color: #14213d;
 padding: 20px;
 }
 
 h3{
-font-family: 'Montserrat', sans-serif;
-color: #11999E;
+font-family: 'Roboto Mono', monospace;
+color: #14213d;
+}
+
+.upper-container h2{
+   font-size: 2.5rem;
+   font-weight: bold;
+   font-family: 'Roboto Mono', monospace;
+   color: #fca311;
+   padding: 20px;
 }
 
 .upper-container{
-background-color: #CEE5D0;
+background-color: black;
 margin: 0px;
 position: relative;
 padding-top: 100px;
+overflow: hidden;
+height: auto;
+padding-top: 51px;
+padding-bottom: 100px;
+height: 100%;
+background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.49)), to(rgba(0, 0, 0, 0.49))), url(https://uploads-ssl.webflow.com/5b32655069229148933e1636/5b3442cf66025460b001f8ab_VEWQ.png);
+background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.49), rgba(0, 0, 0, 0.49)), url(https://uploads-ssl.webflow.com/5b32655069229148933e1636/5b3442cf66025460b001f8ab_VEWQ.png);
+background-position: 0% 0px, 130% -50%;
+background-size: auto, contain;
+background-repeat: repeat, no-repeat; 
+opacity: 0.9;
 }
+
+
+
 
 .skill-row{
 width: 50%;
@@ -97,16 +143,13 @@ margin: 100px 0px 100px 0px;
 }
 
 .bottom-container{
-background-color: #66BFBF;
+background-color: rgb(21, 15, 15);
 padding-top: 40px;
 padding-bottom: 40px;
+opacity: 0.9;
 }
 
-.bottom-cloud{
-position: absolute;
-top: 550px;
-left: 450px;
-}
+
 
 .top-cloud{
 position: absolute;
